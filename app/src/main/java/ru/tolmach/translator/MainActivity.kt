@@ -204,11 +204,11 @@ class MainActivity : AppCompatActivity() {
                 val result = engine.translate(from, to, text)
                 if (text != src.text.toString()) return@launch
                 setTextSilently(dst, result)
-                history.record(from, to, text, result)
+history.record(from, to, text, result)
                 showStatus(getString(R.string.status_ready_offline))
             } catch (e: CancellationException) {
                 throw e
-            } catch (e: Exception) {
+            } catch (e: Throwable) {
                 showStatus(errorText(e))
             }
         }
@@ -441,19 +441,18 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch {
             showStatus(getString(R.string.status_preparing))
             try {
-                engine.prepare(Lang.RU, Lang.EN)
-                engine.prepare(Lang.EN, Lang.RU)
+                engine.prepare(topLang, topLang.other())
                 app.modelsChecked = true
                 showStatus(getString(R.string.status_ready_offline))
             } catch (e: CancellationException) {
                 throw e
-            } catch (e: Exception) {
+            } catch (e: Throwable) {
                 showStatus(errorText(e))
             }
         }
     }
 
-    private fun errorText(e: Exception): String {
+    private fun errorText(e: Throwable): String {
         val details = e.message?.take(120)?.replace('\n', ' ')
         return if (details.isNullOrBlank()) {
             getString(R.string.status_engine_error)

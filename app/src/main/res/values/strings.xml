@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Толмач</string>
     <string name="app_tagline">Переводчик русского и английского</string>
@@ -19,10 +19,10 @@
     <string name="cd_swap">Поменять половины местами и очистить текст</string>
 
     <string name="status_idle">Нажмите на название языка, чтобы поменять половины местами</string>
-    <string name="status_preparing">Проверяю модели перевода на устройстве…</string>
+    <string name="status_preparing">Готовлю модель перевода…</string>
     <string name="status_translating">Перевожу…</string>
-    <string name="status_ready_offline">Модели на устройстве — перевод работает без интернета</string>
-    <string name="status_engine_error">Перевод недоступен. Один раз подключите интернет, чтобы загрузить модель.</string>
+    <string name="status_ready_offline">Модель OPUS-MT на устройстве — интернет не нужен</string>
+    <string name="status_engine_error">Не удалось запустить офлайн-модель перевода</string>
     <string name="status_from_history">Загружен перевод из истории</string>
 
     <string name="copied">Скопировано</string>

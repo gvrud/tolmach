@@ -12,8 +12,7 @@
         <item name="android:windowBackground">@color/parchment</item>
         <item name="android:statusBarColor">@color/parchment</item>
         <item name="android:navigationBarColor">@color/parchment</item>
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
 </resources>

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Нужно только для однократной загрузки моделей перевода на устройство.
-         Сам перевод выполняется локально и сеть не использует. -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Приложение не запрашивает доступ в интернет: модели перевода
+         поставляются внутри APK, все вычисления идут на устройстве. -->
 
     <application
         android:name=".TolmachApp"
         android:allowBackup="true"
+        android:largeHeap="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"

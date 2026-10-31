@@ -20,8 +20,8 @@ android {
         applicationId = "ru.tolmach.translator"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
     }
 
     signingConfigs {
@@ -67,6 +67,15 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.4")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
-    implementation("com.google.mlkit:translate:17.0.3")
+    implementation("com.microsoft.onnxruntime:onnxruntime-android:1.19.2")
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("com.microsoft.onnxruntime:onnxruntime:1.19.2")
+}
+
+// В JVM-тестах нужен настольный ONNX Runtime, а не Android-сборка
+configurations.configureEach {
+    if (name.contains("UnitTest")) {
+        exclude(group = "com.microsoft.onnxruntime", module = "onnxruntime-android")
+    }
 }
