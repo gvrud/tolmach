@@ -12,3 +12,8 @@ keystore/
 *.keystore
 
 .DS_Store
+
+# Служебные файлы Kotlin/Gradle
+.kotlin/
+*.log
+
