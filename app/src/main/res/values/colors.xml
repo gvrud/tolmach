@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#2F6FED</color>
+    <color name="window_bg">#F2F4F8</color>
+    <color name="pane_bg">#FFFFFFFF</color>
+    <color name="pane_stroke">#FFE2E6ED</color>
+    <color name="ic_launcher_background">#F2E6CE</color>
+    <color name="parchment">#F3E7D0</color>
+    <color name="parchment_dark">#E6D3AE</color>
+    <color name="ink">#4A3520</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Толмач</string>
+    <string name="app_tagline">Переводчик русского и английского</string>
+
+    <string name="lang_russian">Russian</string>
+    <string name="lang_english">English</string>
+
+    <string name="font_down">A−</string>
+    <string name="font_up">A+</string>
+
+    <string name="input_hint">Введите текст или вставьте из буфера обмена</string>
+
+    <string name="cd_copy">Скопировать весь текст в буфер обмена</string>
+    <string name="cd_paste">Вставить текст из буфера обмена</string>
+    <string name="cd_speak">Прочитать текст вслух</string>
+    <string name="cd_stop_speak">Остановить чтение</string>
+    <string name="cd_theme">Переключить светлую и тёмную тему</string>
+    <string name="cd_swap">Поменять половины местами и очистить текст</string>
+
+    <string name="status_idle">Нажмите на название языка, чтобы поменять половины местами</string>
+    <string name="status_preparing">Проверяю модели перевода на устройстве…</string>
+    <string name="status_translating">Перевожу…</string>
+    <string name="status_ready_offline">Модели на устройстве — перевод работает без интернета</string>
+    <string name="status_engine_error">Перевод недоступен. Один раз подключите интернет, чтобы загрузить модель.</string>
+    <string name="status_from_history">Загружен перевод из истории</string>
+
+    <string name="copied">Скопировано</string>
+    <string name="nothing_to_copy">Нечего копировать</string>
+    <string name="nothing_to_say">Нечего читать</string>
+    <string name="paste_empty">Буфер обмена пуст</string>
+    <string name="pasted">Вставлено из буфера обмена</string>
+
+    <string name="tts_unavailable">Голосовой движок системы недоступен</string>
+    <string name="tts_no_language">Для этого языка в системе не установлен голос</string>
+
+    <string name="crumb_home">Толмач</string>
+    <string name="crumb_history">История переводов</string>
+    <string name="crumb_help">Справка</string>
+
+    <string name="history_title">История переводов</string>
+    <string name="history_empty">Пока пусто. Переведите что-нибудь — здесь появятся 50 последних переводов.</string>
+    <string name="history_back">Назад к переводу</string>
+
+    <string name="help_title">Справка</string>
+
+    <string name="splash_loading">Загрузка…</string>
+</resources>

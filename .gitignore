@@ -1,0 +1,14 @@
+.gradle/
+build/
+app/build/
+.idea/
+*.iml
+local.properties
+
+# Ключ подписи и пароли не попадают в репозиторий
+keystore.properties
+keystore/
+*.jks
+*.keystore
+
+.DS_Store

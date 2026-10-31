@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#6E9BFF</color>
+    <color name="window_bg">#0E0F11</color>
+    <color name="pane_bg">#FF191A1D</color>
+    <color name="pane_stroke">#FF2B2E33</color>
+</resources>
